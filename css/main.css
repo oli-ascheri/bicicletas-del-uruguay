@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: #e2e9f7;
+    background: rgb(66,126,240);
+    background: linear-gradient(90deg, rgba(66,126,240,1) 0%, rgba(226,233,247,1) 7%, rgba(200,216,246,1) 93%, rgba(66,126,240,1) 100%);
+
     font-family: 'Anton', sans-serif;
     font-family: 'Permanent Marker', cursive;
 }
@@ -23,6 +25,7 @@ header {
 
 .nav-main {
     display: flex;
+    justify-content: center;
 
     font-size: 30px;
     color: white;
@@ -51,7 +54,8 @@ header {
 }
 
 .nav-main ul li a:hover {
-    border-bottom: 4px solid white;
+    color: #1c4ba3;
+    border-bottom: 4px solid #1c4ba3;
 }
 
 h1 {
@@ -63,6 +67,16 @@ h1 {
     color: #2a66d4;
     margin: 20px;
     width: 100%;
+
+    opacity: 1;
+    animation-name: fade-right;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+}
+
+h1:hover {
+    color:#0d3f9c;
 }
 
 /* HOME: PRIMER SEGMENTO */
@@ -73,6 +87,12 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 50px 10px;
+
+    opacity: 1;
+    animation-name: fade-left;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
 }
 
 .bicicleta-azul {
@@ -231,6 +251,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    animation-name: fade-left;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
 }
 
 .segundo-segmento-left p {
@@ -253,6 +278,11 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     grid-area: segundo-segmento-right;
+
+    animation-name: fade-right;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
 }
 
 .segundo-segmento-right p {
@@ -321,6 +351,12 @@ footer {
 
     display: flex;
     flex-direction: column;
+
+    opacity: 1;
+    animation-name: fade-left;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
     }
 
 legend {
@@ -395,6 +431,11 @@ form {
     font-size: 20px;
     height: 100%;
     font-size: 25px;
+
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
 }
 
 .cuadro-formulario {
@@ -409,22 +450,27 @@ form {
 
 .nombre {
     width: 90%;
+    padding: 5px;
 }
 
 .apellido {
     width: 90%;
+    padding: 5px;
 }
 
 .telefono {
     width: 90%;
+    padding: 5px;
 }
 
 .correo-electronico {
     width: 90%;
+    padding: 5px;
 }
 
 .asunto {
     width: 90%;
+    padding: 5px;
 }
 
 .cuadro-mensaje {
@@ -460,6 +506,11 @@ form {
 
 .gal-1er-seg {
     margin-bottom: 15px;
+
+    animation-name: fade-left;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
 }
 
 .gal-1er-seg h3 {
@@ -618,5 +669,44 @@ form {
 
     table {
         font-size: 20px;
+    }
+}
+
+/* ANIMACIONES */
+
+@keyframes fade-right {
+
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
