@@ -17,9 +17,12 @@ a {
     color: white;
 }
 
+
 /* BARRA DE NAVEGACION */
 
 header {
+    display: flex;
+    justify-content: center;
     top: 20px;
 }
 
@@ -63,10 +66,9 @@ h1 {
     justify-content: center;
 
     font-size: 50px;
-    width: 80%;
     color: #2a66d4;
-    margin: 20px;
     width: 100%;
+    padding: 0px 20px;
 
     opacity: 1;
     animation-name: fade-right;
@@ -86,7 +88,7 @@ h1:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 10px;
+    margin: 50px 23px;
 
     opacity: 1;
     animation-name: fade-left;
@@ -120,27 +122,24 @@ h1:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    margin: 60px;
 }
 
 .bicicleta-blanca {
-    max-width: 385px;
-    min-width: 380px;
-    margin: 0px 80px;
+    max-width: 350px;
+    width: 90%;
     box-shadow: 0 0 10px black;
 }
 
 .columna-2seg {
-    margin: 80px;
+    margin: 50px 20px;
     font-size: 20px;
-    padding-left: 50px
 }
 
 .columna-2seg p {
     font-size: 35px;
     font-weight: bolder;
     color: #263e6b;
+    padding: 8px;
 }
 
 /* HOME: TERCER SEGMENTO */
@@ -161,6 +160,8 @@ h1:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
 }
 
 .home-3seg img {
@@ -185,7 +186,6 @@ h1:hover {
 footer {
     background-color: #427ef0;
     height: 200px;
-    margin-top: 50px;
     box-shadow: 0 0 10px black;
     color: white;
 }
@@ -389,11 +389,9 @@ legend {
 }
 
 table {
-    
-
-    width: 90%;
+    margin: 0px 2px;
+    width: 100%;
     border: 1px solid #000;
-    margin: 0px 10px 0px 10px;
     box-shadow: 0 0 10px black;
     font-size: 10px;
 }
@@ -569,11 +567,6 @@ form {
 /* HOME */
 
 @media screen and (min-width: 800px){
-
-    header {
-        position: sticky;
-        top: 20px;
-    }
 
     .nav-main {
         display: flex;
