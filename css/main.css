@@ -251,6 +251,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     animation-name: fade-left;
     animation-iteration-count: 1;
@@ -275,8 +276,11 @@ footer {
 
 .segundo-segmento-right {
     display: flex;
-    flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+ 
+
     grid-area: segundo-segmento-right;
 
     animation-name: fade-right;
@@ -292,6 +296,7 @@ footer {
 .segundo-segmento-right img {
     box-shadow: 0 0 10px black;
     width: 300px;
+    margin: 1rem;
 }
 
 /* QUIENES SOMOS: tercer segmento */
@@ -416,9 +421,16 @@ th {
 
 /* CONTACTO: PRIMER SEGMENTO */
 
+.contacto-login {
+    margin-bottom: 20px;
+}
+
 .contacto-1er-segmento {
-    font-size: 20px;
-    padding: 20px 50px 30px 50px;
+    margin: 4% 0% 1% 0%;
+    padding: 3rem;
+
+    text-align: center;
+    font-size: 18px;
 }
 
 /* FORMULARIO */
@@ -426,9 +438,10 @@ th {
 form {
     justify-content: center;
     display: flex;
-    font-size: 20px;
-    height: 100%;
+    font-size: 18px;
+    height: 90%;
     font-size: 25px;
+    margin-bottom: 2rem;
 
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -631,9 +644,10 @@ form {
 
     .segundo-segmento-right {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
         flex-direction: row;
+      
         grid-area: segundo-segmento-right;
     }
 }
