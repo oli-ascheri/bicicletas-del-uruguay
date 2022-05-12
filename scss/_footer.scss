@@ -1,0 +1,33 @@
+/* FOOTER */
+
+footer {
+    background-color: $color-primary;
+    height: 15%;
+    box-shadow: 0 0 10px black;
+    color: white;
+    margin: 2rem 0 2rem 0;
+}
+
+.footer-parrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    font-size: 25px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-logo {
+    height: 5rem;
+    margin: 8px;
+}
+
+.facebook-logo {
+    height: 5rem;
+    margin: 8px;
+}

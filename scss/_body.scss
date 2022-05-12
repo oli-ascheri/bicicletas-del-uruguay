@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(66,126,240);
+    background: linear-gradient(90deg, rgba(66,126,240,1) 0%, rgba(226,233,247,1) 7%, rgba(200,216,246,1) 93%, rgba(66,126,240,1) 100%);
+
+    font-family: 'Anton', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+    font-size: 50px;
+    color: #2a66d4;
+    width: 100%;
+    padding: 0px 20px;
+
+    opacity: 1;
+    animation-name: fade-right;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+
+    @media screen and (min-width: 800px){
+
+        h1 {
+            font-size: 90px;
+        }
+    }
+
+    &:hover {
+        color:#0d3f9c;
+    }
+}
+

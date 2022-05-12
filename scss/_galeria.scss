@@ -1,0 +1,98 @@
+/* GALERIA: HEADER*/
+
+.galeria-wrapper {
+    margin: 15px;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        
+        margin: 20px;
+    }
+}
+
+/* GALERIA: primer segmento */
+
+.gal-1er-seg {
+    margin: auto;
+
+    animation-name: fade-left;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+
+    h3 {
+        color: $color-secundary;
+        font-size: 35px;
+        margin: 15px;
+    
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        padding: 10px;
+        width: 330px;
+    }
+
+    ul { 
+        list-style-type: none;
+    
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* CAROSUEL */
+
+.carousel-section h3 {
+
+    color: $color-secundary;
+    font-size: 35px;
+    margin: 15px;
+
+    text-align: center;
+}
+
+@media screen and (min-width: 695px){
+
+    .carousel-section {
+    width: 55%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+
+/* GALERIA: segundo segmento */
+
+.gal-2do-seg {
+    margin-top: 2rem;
+
+    h3 {
+        color: $color-secundary;
+        font-size: 35px;
+        margin: auto;
+    
+        display: flex;
+        justify-content: center;
+    }
+
+    ul { 
+        list-style-type: none;
+        padding: 0;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    img {
+        padding: 10px;
+        width: 330px;
+    }
+}

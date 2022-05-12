@@ -1,0 +1,151 @@
+/* QUIENES SOMOS */
+
+.quienes-somos-wrapper {
+    display: grid;
+    grid-template-areas:
+     "primer-segmento"
+     "segundo-segmento-left" 
+     "segundo-segmento-right"
+     "tercer-segmento-left"
+     "tercer-segmento-right"
+     "cuarto-segmento";
+     margin: auto;
+
+     h3 {
+        font-size: 25px;
+        margin: auto;
+        color: #263e6b;
+    }
+
+    @media screen and (min-width: 1320px){
+            display: grid;
+            grid-template-areas:
+            "primer-segmento primer-segmento"
+            "segundo-segmento-left segundo-segmento-right"
+            "tercer-segmento-left tercer-segmento-right"
+            "cuarto-segmento cuarto-segmento";
+             margin: 30px;
+    }
+}
+
+/* QUIENES SOMOS: primer segmento */
+
+.primer-segmento {
+    grid-area: primer-segmento;
+    margin-bottom: 10px;
+
+    p {
+        font-size: 20px;
+        padding: 15px 25px 25px 25px;
+    }
+}
+
+
+/* QUIENES SOMOS: segundo segmento */
+
+.segundo-segmento-left {
+    grid-area: segundo-segmento-left; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px;
+
+    animation-name: fade-left;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+
+    p {
+        margin: 25px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    img {
+        width: 300px;
+        box-shadow: 0 0 10px black;
+    }
+
+    @media screen and (min-width: 655px){
+            grid-area: segundo-segmento-left; 
+            display: flex;
+            flex-direction: row;
+        }
+}
+
+.segundo-segmento-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin:20px;
+ 
+
+    grid-area: segundo-segmento-right;
+
+    animation-name: fade-right;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+
+    p {
+        margin: 10px;
+    }
+
+    img {
+        box-shadow: 0 0 10px black;
+        width: 300px;
+    }
+
+    @media screen and (min-width: 655px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+          
+            grid-area: segundo-segmento-right;
+        }
+ }
+    
+
+/* QUIENES SOMOS: tercer segmento */
+
+.tercer-segmento-left {
+    grid-area: tercer-segmento-left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    box-shadow: 3px 3px 5px 3px black;
+
+    padding: 25px;
+}
+
+.tercer-segmento-right {
+    grid-area: tercer-segmento-right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    box-shadow: 3px 3px 5px 3px black;
+    padding: 25px;
+}
+
+/* QUIENES SOMOS: cuarto segmento */
+
+.cuarto-segmento {
+    grid-area: cuarto-segmento;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+    margin: 20px;
+    margin-bottom: -15px;
+    box-shadow: 3px 3px 5px 3px black; 
+}

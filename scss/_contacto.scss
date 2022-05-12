@@ -1,0 +1,91 @@
+/* CONTACTO: PRIMER SEGMENTO */
+
+.contacto-login {
+    margin-bottom: 20px;
+}
+
+.contacto-1er-segmento {
+    margin: 2% 0% 1% 0%;
+    padding: 2rem;
+
+    text-align: center;
+    font-size: 18px;
+}
+
+/* FORMULARIO */
+
+form {
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+    height: 90%;
+    font-size: 25px;
+    margin-bottom: 2rem;
+
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+}
+
+.cuadro-formulario {
+    width: 70%;
+    background-color: #dfe2e7;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+        font-size: 1rem;
+
+        
+    @media screen and (min-width: 800px){
+
+        font-size: 2rem;
+        }
+    }
+ }
+
+
+.nombre {
+    width: 90%;
+    padding: 5px;
+}
+
+.apellido {
+    width: 90%;
+    padding: 5px;
+}
+
+.telefono {
+    width: 90%;
+    padding: 5px;
+}
+
+.correo-electronico {
+    width: 90%;
+    padding: 5px;
+}
+
+.asunto {
+    width: 90%;
+    padding: 5px;
+}
+
+.cuadro-mensaje {
+    height: 200px;
+    width: 90%;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botones input {
+    font-size: 15px;
+    margin: 10px 0px 10px 10px;
+    box-shadow: 0 0 5px black;
+}
