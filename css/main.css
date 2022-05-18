@@ -93,7 +93,7 @@ header {
 
 /* FOOTER */
 footer {
-  background-color: #427ef0;
+  background-color: #427EF0;
   height: 15%;
   box-shadow: 0 0 10px black;
   color: white;
@@ -175,6 +175,9 @@ footer {
     color: #263e6b;
     padding: 8px; }
 
+.cola-2 {
+  background-color: #1c4ba3; }
+
 /* HOME: TERCER SEGMENTO */
 .titulo-3seg {
   display: flex;
@@ -182,7 +185,7 @@ footer {
   align-items: stretch;
   margin: 20px 0px 30px 10px;
   font-size: 50px;
-  color: #263e6b;
+  color: #1c4ba3;
   width: 100%; }
 
 .home-3seg {
@@ -370,7 +373,7 @@ legend {
   justify-content: center;
   padding-bottom: 25px;
   font-size: 50px;
-  color: #263e6b; }
+  color: #1c4ba3; }
 
 table {
   margin: auto;
@@ -397,6 +400,10 @@ th {
   justify-content: center;
   padding: 10px; }
 
+.cola {
+  background-color: #427ef0;
+  box-shadow: 0 0 15px black; }
+
 /* GALERIA: HEADER*/
 .galeria-wrapper {
   margin: 15px; }
@@ -413,7 +420,7 @@ th {
   animation-timing-function: ease;
   animation-duration: .5s; }
   .gal-1er-seg h3 {
-    color: #263e6b;
+    color: #1c4ba3;
     font-size: 35px;
     margin: 15px;
     display: flex;
@@ -430,7 +437,7 @@ th {
 
 /* CAROSUEL */
 .carousel-section h3 {
-  color: #263e6b;
+  color: #1c4ba3;
   font-size: 35px;
   margin: 15px;
   text-align: center; }
@@ -446,7 +453,7 @@ th {
 .gal-2do-seg {
   margin-top: 2rem; }
   .gal-2do-seg h3 {
-    color: #263e6b;
+    color: #1c4ba3;
     font-size: 35px;
     margin: auto;
     display: flex;
