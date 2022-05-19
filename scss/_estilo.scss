@@ -1,18 +1,66 @@
+// Operaciones
+
+
+
 // Mapas
 
-$size: (
-    big: 800px,
-    medium: 600px,
-    small: 400px,
+$titulos: (
+    claro: #427EF0,
+    obscuro: #1c4ba3,
+    atenuado: #becde9,
 );
 
-
-@each $size, $medida in $size {
-    .size-#{$size} {
-        size: $medida;
+@each $titulo, $color in $titulos {
+    .titulo-#{$titulo} {
+        color: $color;
     }
 }
 
-div {
-    color: red;
+
+$parrafos: (
+    corto: 200px,
+    mediano: 300px,
+    largo: 600px,
+);
+
+@each $parrafo, $medida in $parrafos {
+    .parrafo-#{$parrafo} {
+        width: $medida;
+        height: $medida;
+    }
 }
+
+
+// Extend
+
+.texto-alineado-negro-grande {
+    width: 90%;
+}
+
+.texto-alineado {
+    @extend .texto-alineado-negro-grande;
+    @extend .texto-alineado-negro;
+    
+    text-align: center;
+}
+
+.texto-alineado-negro {
+    @extend .texto-alineado-negro-grande;
+
+    color: black;
+}
+
+// Mixins
+
+@mixin centrado ($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin columna ($display, $justify, $direction) {
+    display: $display;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
