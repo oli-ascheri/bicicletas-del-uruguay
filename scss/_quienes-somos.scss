@@ -32,7 +32,11 @@
 
 .primer-segmento {
     grid-area: primer-segmento;
+
     margin-bottom: 10px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
 
     p {
         font-size: 20px;
@@ -118,10 +122,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
-    box-shadow: 3px 3px 5px 3px black;
 
-    padding: 25px;
+    
+    box-shadow: 3px 3px 5px 3px black;
+    width: 90%;
+    height: 85%;
+    
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 600px){
+        width: 75%;  
+        margin-bottom: 2rem;      
+    }
+
+    @media screen and (min-width: 1320x){
+        margin-top: 1rem;     
+        margin-bottom: auto; 
+    }
+ 
 }
 
 .tercer-segmento-right {
@@ -130,9 +150,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+
+
     box-shadow: 3px 3px 5px 3px black;
-    padding: 25px;
+    width: 90%;
+    height: 85%;
+    
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 600px){
+        width: 75%;
+        margin-bottom: 2rem;  
+    }
+
+    @media screen and (min-width: 1320x){
+        
+        
+    }
+
+
 }
 
 /* QUIENES SOMOS: cuarto segmento */
@@ -144,8 +182,12 @@
     align-items: center;
     justify-content: center;
 
-    padding: 25px;
-    margin: 20px;
-    margin-bottom: -15px;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
     box-shadow: 3px 3px 5px 3px black; 
+
+    @media screen and (min-width: 600px){
+        width: 75%;        
+    }
 }

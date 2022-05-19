@@ -21,6 +21,15 @@
   100% {
     opacity: 1; } }
 
+.size-big {
+  size: 800px; }
+
+.size-medium {
+  size: 600px; }
+
+.size-small {
+  size: 400px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +48,7 @@ h1 {
   color: #2a66d4;
   width: 100%;
   padding: 0px 20px;
+  text-align: center;
   opacity: 1;
   animation-name: fade-right;
   animation-iteration-count: 1;
@@ -160,6 +170,8 @@ footer {
     .home-2seg {
       flex-direction: row;
       justify-content: center; } }
+  .home-2seg p {
+    text-align: center; }
 
 .bicicleta-blanca {
   max-width: 350px;
@@ -185,7 +197,7 @@ footer {
   align-items: stretch;
   margin: 20px 0px 30px 10px;
   font-size: 50px;
-  color: #1c4ba3;
+  color: #2067eb;
   width: 100%; }
 
 .home-3seg {
@@ -232,7 +244,10 @@ footer {
 /* QUIENES SOMOS: primer segmento */
 .primer-segmento {
   grid-area: primer-segmento;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  width: 75%;
+  margin: auto;
+  text-align: center; }
   .primer-segmento p {
     font-size: 20px;
     padding: 15px 25px 25px 25px; }
@@ -293,9 +308,20 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px;
   box-shadow: 3px 3px 5px 3px black;
-  padding: 25px; }
+  width: 90%;
+  height: 85%;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 600px) {
+    .tercer-segmento-left {
+      width: 75%;
+      margin-bottom: 2rem; } }
+  @media screen and (min-width: 1320x) {
+    .tercer-segmento-left {
+      margin-top: 1rem;
+      margin-bottom: auto; } }
 
 .tercer-segmento-right {
   grid-area: tercer-segmento-right;
@@ -303,9 +329,16 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px;
   box-shadow: 3px 3px 5px 3px black;
-  padding: 25px; }
+  width: 90%;
+  height: 85%;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 600px) {
+    .tercer-segmento-right {
+      width: 75%;
+      margin-bottom: 2rem; } }
 
 /* QUIENES SOMOS: cuarto segmento */
 .cuarto-segmento {
@@ -314,10 +347,13 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 25px;
-  margin: 20px;
-  margin-bottom: -15px;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
   box-shadow: 3px 3px 5px 3px black; }
+  @media screen and (min-width: 600px) {
+    .cuarto-segmento {
+      width: 75%; } }
 
 /* SERVICIOS: PRIMER SEGMENTO */
 .servicios-1er-parrafo {
@@ -477,6 +513,10 @@ th {
   padding: 2rem;
   text-align: center;
   font-size: 18px; }
+  .contacto-1er-segmento p {
+    text-align: center;
+    width: 85%;
+    margin: auto; }
 
 /* FORMULARIO */
 form {
@@ -536,3 +576,15 @@ form {
   font-size: 15px;
   margin: 10px 0px 10px 10px;
   box-shadow: 0 0 5px black; }
+
+.size-big {
+  size: 800px; }
+
+.size-medium {
+  size: 600px; }
+
+.size-small {
+  size: 400px; }
+
+div {
+  color: red; }
