@@ -28,12 +28,19 @@ header {
     ul {
 
         
-        display: flex;
-        flex-wrap: wrap;
+        
     
         list-style-type: none;
         color: white;
         align-items: center;
+
+        @media screen and (min-width: 1000px){
+            font-size: 2rem;
+
+            display: flex;
+            flex-direction:  wrap;
+            justify-content: space-around;
+        }
 
         li {
             margin: 10px;
@@ -51,7 +58,7 @@ header {
             font-size: 2rem;
 
             display: flex;
-            flex-direction: row;
+            flex-direction:  row;
             justify-content: space-around;
         }
 }

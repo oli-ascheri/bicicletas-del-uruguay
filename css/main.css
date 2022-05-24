@@ -72,11 +72,15 @@ header {
     text-decoration: none;
     color: white; }
   .nav-main ul {
-    display: flex;
-    flex-wrap: wrap;
     list-style-type: none;
     color: white;
     align-items: center; }
+    @media screen and (min-width: 1000px) {
+      .nav-main ul {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: wrap;
+        justify-content: space-around; } }
     .nav-main ul li {
       margin: 10px; }
       .nav-main ul li a:hover {
