@@ -42,10 +42,9 @@
 /* HOME: SEGUNDO SEGMENTO */
 
 .home-2seg {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    @include centrado(flex, center, center);
 
     @media screen and (min-width: 1320px){
 
@@ -84,9 +83,8 @@
 /* HOME: TERCER SEGMENTO */
 
 .titulo-3seg {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
+
+    @include centrado(flex, center, stretch);
 
     margin: 20px 0px 30px 10px;
     font-size: 50px;
